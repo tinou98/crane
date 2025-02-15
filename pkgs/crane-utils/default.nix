@@ -9,5 +9,5 @@ rustPlatform.buildRustPackage {
   src = lib.sourceFilesBySuffices ./. [ ".rs" ".toml" ".lock" ];
 
   useFetchCargoVendor = true;
-  cargoHash = "sha256-yhq6h4dq+jg/fxgB3M/sODLNutUbx8nXRX9kps7rhFE=";
+  cargoLock = { lockFile = ./Cargo.lock; };
 }
